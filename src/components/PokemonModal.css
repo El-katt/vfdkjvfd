@@ -1,0 +1,219 @@
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    padding: 16px;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #64748b;
+}
+
+.modal-body {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .modal-body {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.pokemon-details-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemon-detail-image {
+    width: 192px;
+    height: 192px;
+}
+
+.pokemon-detail-types {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.pokemon-detail-attributes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.attribute-label {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.attribute-value {
+    font-weight: 500;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.tabs {
+    width: 100%;
+}
+
+.tab-list {
+    display: flex;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.tab.active {
+    color: #3b82f6;
+    border-bottom: 2px solid #3b82f6;
+}
+
+.tab-content {
+    padding: 16px 0;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+.stat-item {
+    margin-bottom: 16px;
+}
+
+.stat-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-name {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.stat-value {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.stat-bar {
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 9999px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.stat-bar-fill {
+    height: 100%;
+    background-color: #3b82f6;
+}
+
+.moves-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.move-item {
+    padding: 8px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.moves-more {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.modal-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+}
+
+.modal-image-skeleton {
+    width: 160px;
+    height: 160px;
+    border-radius: 8px;
+}
+
+.modal-title-skeleton {
+    height: 32px;
+    width: 160px;
+    border-radius: 4px;
+}
+
+.modal-text-skeleton {
+    height: 16px;
+    width: 100%;
+    border-radius: 4px;
+}
+
